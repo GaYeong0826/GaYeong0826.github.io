@@ -1,3 +1,12 @@
+@font-face {
+  font-family: WAG;
+  src: url("WAGURI.ttf");
+}
+
+@font-face {
+  font-family: NOTO;
+  src: url("NotoSansKR-VariableFont_wght.ttf");
+}
 #image {
   display: block;
   width: 400px;
@@ -14,4 +23,11 @@ h1{
   font-size: 60px;
   text-align: center;
   /*background-color:black;*/
+}
+p {
+  margin-top: 30px;
+  font-family: NOTO;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.5px;
 }
