@@ -1,10 +1,17 @@
 #image {
   display: block;
-  width: 40px;
+  width: 400px;
   margin: 0 auto;
   margin-top: 50px;
 }
 body {
   background-color:rgb(52, 52, 52);
   color:white;
+}
+h1{
+  font-family: WAG;
+  font-weight: normal;
+  font-size: 60px;
+  text-align: center;
+  /*background-color:black;*/
 }
