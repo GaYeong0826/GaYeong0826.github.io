@@ -30,6 +30,7 @@ p {
   font-size: 15px;
   line-height: 150%;
   letter-spacing: -0.5px;
+  text-align: center;
 }
 #container {
   position: relative;
