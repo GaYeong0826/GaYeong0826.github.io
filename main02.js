@@ -60,9 +60,11 @@ $(function () {
     if (yPos >= 5700) {
       $('#last-text03').stop().animate({ 'opacity': 1 }, 300);
       $('#last-pill').stop().animate({ 'opacity': 1 }, 300);
+      $('#pills-container').stop().animate({ 'opacity': 1 }, 300);
     } else {
       $('#last-text03').stop().animate({ 'opacity': 0 }, 300);
-      $('#last-pill').stop().animate({ 'opacity': 0 }, 300);
+      $('#last-pill').stop().animate({ 'opacity': 0 }, 300);      
+      $('#pills-container').stop().animate({ 'opacity': 0 }, 300);
     }
 
     if (yPos <= 2300 && yPos >= 3500) {
@@ -129,6 +131,23 @@ $(function () {
       $(this).find('div').css('opacity', '0');
     },
   });
-
+  $(document).ready(function () {
+    // 모든 .pill에 이벤트 리스너 추가
+    $(".pill").on({
+      mouseenter: function () {
+        // 현재 마우스가 올라간 pill 제외한 다른 pill을 투명하게
+        $(".pill").not(this).css("opacity", "0.3");
+        // 현재 pill의 hover 영역 활성화
+        $(this).find(".pill-hover").css("opacity", "1");
+      },
+      mouseleave: function () {
+        // 모든 pill 투명도 복원
+        $(".pill").css("opacity", "1");
+        // 현재 pill의 hover 영역 비활성화
+        $(this).find(".pill-hover").css("opacity", "0");
+      },
+    });
+  });
+  
   
 });
