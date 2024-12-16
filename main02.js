@@ -142,10 +142,92 @@ $(function () {
   
   
 
-    /*
-  $('#pill03').off('click').on('click', function() {
-    window.location.href = 'https://www.example.com';  // 외부 사이트로 이동
+  $('#pill02').off('click').on('click', function() {
+    // body를 페이드 아웃 시키기 (0.5초 동안 사라짐)
+    $('body').fadeOut(500, function() {
+      // 페이지 전환
+      window.location.href = '/pill_web/pill02.html';
+    });
   });
-  */
+
+  $('#pill03').off('click').on('click', function() {
+    $('body').fadeOut(500, function() {
+      window.location.href = '/pill_web/pill03.html';
+    });
+  });
+
+  $('#pill04').off('click').on('click', function() {
+    $('body').fadeOut(500, function() {
+      window.location.href = '/pill_web/pill04.html';
+    });
+  });
+
+  $('#pill04').off('click').on('click', function() {
+    $('body').fadeOut(500, function() {
+      window.location.href = '/pill_web/pill04.html';
+    });
+  });
   
+  $('#pill05').off('click').on('click', function() {
+    $('body').fadeOut(500, function() {
+      window.location.href = '/pill_web/pill05.html';
+    });
+  });
+
+  $('#pill06').off('click').on('click', function() {
+    $('body').fadeOut(500, function() {
+      window.location.href = '/pill_web/pill06.html';
+    });
+  });
+
+  $('#pill07').off('click').on('click', function() {
+    $('body').fadeOut(500, function() {
+      window.location.href = '/pill_web/pill07.html';
+    });
+  });
+
+  $('#pill08').off('click').on('click', function() {
+    $('body').fadeOut(500, function() {
+      window.location.href = '/pill_web/pill08.html';
+    });
+  });
+
+  $('#pill09').off('click').on('click', function() {
+    $('body').fadeOut(500, function() {
+      window.location.href = '/pill_web/pill09.html';
+    });
+  });
+
+  $('#pill10').off('click').on('click', function() {
+    $('body').fadeOut(500, function() {
+      window.location.href = '/pill_web/pill10.html';
+    });
+  });
+
+  $('#pill11').off('click').on('click', function() {
+    $('body').fadeOut(500, function() {
+      window.location.href = '/pill_web/pill11.html';
+    });
+  });
+
+  $('#pill12').off('click').on('click', function() {
+    $('body').fadeOut(500, function() {
+      window.location.href = '/pill_web/pill12.html';
+    });
+  });
+
+  $('#pill13').off('click').on('click', function() {
+    $('body').fadeOut(500, function() {
+      window.location.href = '/pill_web/pill13.html';
+    });
+  });
+
+  $('#pill14').off('click').on('click', function() {
+    $('body').fadeOut(500, function() {
+      window.location.href = '/pill_web/pill14.html';
+    });
+  });
+
+
+
 });
