@@ -116,11 +116,7 @@ $(function () {
       $('#last-text01, #last-text02, #last-text03').css('color', 'black');
     }
   });
-  /*
-  $('#pill03').off('click').on('click', function() {
-    window.location.href = 'https://www.example.com';  // 외부 사이트로 이동
-  });
-  */
+
   $('#pill02, #pill03, #pill04, #pill05, #pill06, #pill07').on({
     mouseenter: function () {
       // 현재 pill의 -hover 요소만 보이게 설정
@@ -149,5 +145,11 @@ $(function () {
     });
   });
   
+
+    /*
+  $('#pill03').off('click').on('click', function() {
+    window.location.href = 'https://www.example.com';  // 외부 사이트로 이동
+  });
+  */
   
 });
