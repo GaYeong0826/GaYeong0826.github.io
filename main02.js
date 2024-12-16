@@ -140,7 +140,7 @@ $(function () {
         // 모든 pill 투명도 복원
         $(".pill").css("opacity", "1");
         // 현재 pill의 hover 영역 비활성화
-        $(this).find(".pill-hover").css("opacity", "0");
+        $('#pills').find(".pill-hover").css("opacity", "0");
       },
     });
   });
