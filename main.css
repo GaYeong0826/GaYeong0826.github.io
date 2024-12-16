@@ -54,7 +54,7 @@
 
 #pill-text01 {
   position: relative;
-  background: url('/images/text01.png');
+  background: url('/images/texts/text01.png');
   object-fit: cover;
   width: 1000px;
   height: 1000px;
@@ -67,7 +67,7 @@
 
 #pill-text02 {
   position: relative;
-  background: url('/images/text02.png');
+  background: url('/images/texts/text02.png');
   object-fit: cover;
   width: 1000px;
   height: 1000px;
@@ -80,7 +80,7 @@
 
 #pill-text03 {
   position: relative;
-  background: url('/images/text03.png');
+  background: url('/images/texts/text03.png');
   object-fit: cover;
   width: 1000px;
   height: 1000px;
@@ -99,7 +99,7 @@
   left: 50%;
   width: 1000px;
   height: 900px;
-  background: url('/images/pill01.png') no-repeat;
+  background: url('/images/pills/pill01.png') no-repeat;
   background-size: contain;
 }
 
@@ -111,7 +111,7 @@
   margin-left: -500px;
   width: 1000px;
   height: 900px;
-  background: url('/images/pill01.png') no-repeat;
+  background: url('/images/pills/pill01.png') no-repeat;
   background-size: contain;
   opacity: 0;
 }
@@ -124,7 +124,7 @@
   margin-left: -500px;
   width: 1000px;
   height: 900px;
-  background: url('/images/pill01.png') no-repeat;
+  background: url('/images/pills/pill01.png') no-repeat;
   background-size: contain;
   opacity: 0;
 }
