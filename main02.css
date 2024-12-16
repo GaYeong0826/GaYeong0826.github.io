@@ -364,12 +364,19 @@ video {
   top: 7000px;
   left: 0px;
 }
+#pills {
+  position: absolute;
+  top: 6800px;
+  width: 1400px;
+  height: 500px;
+  margin-left: -700px;
+  left: 50%;
+}
 #pills-container {
   display: flex;
   position: absolute;
   width: 1400px;
   height: 500px;
-  top: 6800px;
   margin-left: -700px;
   left: 50%;
   z-index: 999;
@@ -419,5 +426,12 @@ video {
   margin-left: 70px;
 }
 #pill02-hover {
-  
+  background: url('/images/hover01.png');
+  width: 500px;
+  height: 500px;
+  background-size: contain;
+  top: 6800px;
+  left: 50%;
+  z-index: 1000;
+  opacity: 1;
 }
