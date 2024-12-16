@@ -358,80 +358,134 @@ video {
 }
 #BG2 {
   position: absolute;
-  background-color: rgb(216, 255, 144);
+  background-color: rgb(200, 255, 99);
   width: 100%;
   height: 500px;
   top: 7000px;
   left: 0px;
 }
-#pills {
-  position: absolute;
-  top: 6800px;
-  width: 1400px;
-  height: 500px;
-  margin-left: -700px;
-  left: 50%;
-}
+
 #pills-container {
   display: flex;
+  align-items: flex-end;
+  justify-content: center;
   position: absolute;
-  width: 1400px;
+  width: 1800px;
   height: 500px;
-  margin-left: -700px;
+  margin-left: -900px;
   left: 50%;
+  top: 6400px;
   z-index: 999;
   background: none;
+  gap: 20px;
 }
 #pill02{
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
   background: url('/images/pill02.png') no-repeat;
   background-size: contain;
 }
 #pill03{
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
   background: url('/images/pill03.png') no-repeat;
   background-size: contain;
-  margin-left: 70px;
 
 }
 #pill04{
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
   background: url('/images/pill04.png') no-repeat;
   background-size: contain;
-  margin-left: 70px;
 }
 #pill05{
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
   background: url('/images/pill05.png') no-repeat;
   background-size: contain;
-  margin-left: 70px;
 
 }
 #pill06{
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
   background: url('/images/pill06.png') no-repeat;
   background-size: contain;
-  margin-left: 70px;
 }
 #pill07{
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
   background: url('/images/pill07.png') no-repeat;
   background-size: contain;
-  margin-left: 70px;
 }
 #pill02-hover {
-  background: url('/images/hover01.png');
-  width: 500px;
-  height: 500px;
+    background: url('/images/hover01.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    left: 80px;
+    top: 30px;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+#pill03-hover {
+  background: url('/images/hover02.png') no-repeat;
   background-size: contain;
-  top: 6800px;
-  left: 50%;
-  z-index: 1000;
-  opacity: 1;
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  left: 340px;
+  top: 30px;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+#pill04-hover {
+  background: url('/images/hover03.png') no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  left: 500px;
+  top: 30px;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+#pill05-hover {
+  background: url('/images/hover04.png') no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  left: 730px;
+  top: 30px;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+#pill06-hover {
+  background: url('/images/hover05.png') no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  left: 1000px;
+  top: 30px;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+#pill07-hover {
+  background: url('/images/hover06.png') no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  left: 1200px;
+  top: 30px;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }

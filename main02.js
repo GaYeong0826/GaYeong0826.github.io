@@ -119,7 +119,16 @@ $(function () {
     window.location.href = 'https://www.example.com';  // 외부 사이트로 이동
   });
   */
-
+  $('#pill02, #pill03, #pill04, #pill05, #pill06, #pill07').on({
+    mouseenter: function () {
+      // 현재 pill의 -hover 요소만 보이게 설정
+      $(this).find('div').css('opacity', '1');
+    },
+    mouseleave: function () {
+      // 현재 pill의 -hover 요소 다시 숨김
+      $(this).find('div').css('opacity', '0');
+    },
+  });
 
   
 });
