@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>만약</title>
+  <style>
+    @font-face {
+      font-family: 'Pretendard';
+      src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+      font-style: normal;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(189, 255, 67, 1));
+      height: 100vh;
+    }
+
+    #BG {
+      position: absolute;
+    }
+    #info {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: 140px;
+      top: 375px;
+      z-index: 10;
+      background: url('/images/news_icon.png') no-repeat center center;
+      background-size: contain;
+      cursor: pointer; /* 마우스 커서를 명확하게 보이도록 변경 */
+    }
+    #pop-up {
+      position: absolute;
+      width: 700px;
+      height: 150px;
+      left: 140px;
+      top: 430px;
+      z-index: 11;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    #newsinfo {
+      font-family: 'Pretendard';
+      position: absolute;
+      width: 700px;
+      height: 150px;
+      padding: 30px;
+      left: 140px;
+      top: 430px;
+      z-index: 12;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    #newsinfo p:nth-child(2) {
+      font-weight: bold;
+      font-size: 15px;
+      text-align: right;
+      margin-top: 20px;
+      margin-right: 20px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <img id="BG" src="/images/pill_info/pill12-info.png">
+  <div id="info"></div>
+  <div id="pop-up"></div>
+  <div id="newsinfo">
+    <p>“흙수저에서 400억 부자된 여성의 조언"</p>
+    <p>기사 보러 가기 > </p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      let isHovered = false; // 팝업 유지 상태를 추적하는 플래그
+      let hideTimeout; // 사라짐 딜레이용 타이머
+  
+      // 팝업 보이기 함수
+      function showPopup() {
+        clearTimeout(hideTimeout); // 타이머 취소
+        $("#pop-up, #newsinfo").css("opacity", "1");
+        isHovered = true; // 팝업 활성화 상태로 설정
+      }
+  
+      // 팝업 숨기기 함수
+      function hidePopup() {
+        hideTimeout = setTimeout(() => {
+          if (!isHovered) {
+            $("#pop-up, #newsinfo").css("opacity", "0");
+          }
+        }, 500); // 200ms 딜레이
+      }
+  
+      // #info와 팝업에 hover 이벤트 연결
+      $("#info").on("mouseenter", function () {
+        showPopup(); // 마우스가 #info에 들어가면 팝업 표시
+      });
+  
+      $("#info").on("mouseleave", function () {
+        isHovered = false; // 팝업 활성화 상태 해제
+        hidePopup(); // 마우스가 #info를 떠나면 딜레이 후 팝업 숨김
+      });
+  
+      $("#newsinfo").on("mouseenter", function () {
+        showPopup(); // 마우스가 팝업으로 들어오면 계속 표시
+      });
+  
+      $("#newsinfo").on("mouseleave", function () {
+        isHovered = false; // 팝업 활성화 상태 해제
+        hidePopup(); // 마우스가 팝업을 떠나면 딜레이 후 숨김
+      });
+  
+      // #newsinfo 클릭 이벤트
+      $("#newsinfo").on("click", function () {
+        window.location.href = "https://www.hankyung.com/article/202112317313H"; // 외부 사이트 URL
+      });
+    });
+  </script>
+  
+</body>
+</html>
