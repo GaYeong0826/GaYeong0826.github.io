@@ -65,7 +65,7 @@ $(function () {
       $('#last-pill').stop().animate({ 'opacity': 0 }, 300);
     }
 
-    if (yPos <= 2300) {
+    if (yPos <= 2300 && yPos >= 3500) {
       $('.overlay').stop().animate({ 'opacity': 0}, 300);
     } else {
       $('.overlay').stop().animate({ 'opacity': 1 }, 300);
