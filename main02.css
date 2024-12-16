@@ -369,6 +369,7 @@ video {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  flex-wrap: wrap;
   position: absolute;
   width: 1800px;
   height: 500px;
@@ -382,123 +383,143 @@ video {
 #pill02{
   width: 200px;
   height: 200px;
-  background: url('/images/pill02.png') no-repeat;
+  background: url('/images/pills/pill02.png') no-repeat;
   background-size: contain;
 }
 #pill03{
   width: 200px;
   height: 200px;
-  background: url('/images/pill03.png') no-repeat;
+  background: url('/images/pills/pill03.png') no-repeat;
   background-size: contain;
 
 }
 #pill04{
   width: 200px;
   height: 200px;
-  background: url('/images/pill04.png') no-repeat;
+  background: url('/images/pills/pill04.png') no-repeat;
   background-size: contain;
 }
 #pill05{
   width: 200px;
   height: 200px;
-  background: url('/images/pill05.png') no-repeat;
+  background: url('/images/pills/pill05.png') no-repeat;
   background-size: contain;
 
 }
 #pill06{
   width: 200px;
   height: 200px;
-  background: url('/images/pill06.png') no-repeat;
+  background: url('/images/pills/pill06.png') no-repeat;
   background-size: contain;
 }
 #pill07{
   width: 200px;
   height: 200px;
-  background: url('/images/pill07.png') no-repeat;
+  background: url('/images/pills/pill07.png') no-repeat;
+  background-size: contain;
+}
+#pill08{
+  width: 200px;
+  height: 200px;
+  background: url('/images/pills/pill08.png') no-repeat;
+  background-size: contain;
+}
+#pill09{
+  width: 200px;
+  height: 200px;
+  background: url('/images/pills/pill09.png') no-repeat;
+  background-size: contain;
+}
+#pill10{
+  width: 200px;
+  height: 200px;
+  background: url('/images/pills/pill10.png') no-repeat;
+  background-size: contain;
+}
+#pill11{
+  width: 200px;
+  height: 200px;
+  background: url('/images/pills/pill11.png') no-repeat;
+  background-size: contain;
+}
+#pill12{
+  width: 200px;
+  height: 200px;
+  background: url('/images/pills/pill12.png') no-repeat;
+  background-size: contain;
+}
+#pill13{
+  width: 200px;
+  height: 200px;
+  background: url('/images/pills/pill13.png') no-repeat;
+  background-size: contain;
+}
+#pill14{
+  width: 200px;
+  height: 200px;
+  background: url('/images/pills/pill14.png') no-repeat;
   background-size: contain;
 }
 #pill02-hover {
-    background: url('/images/hover01.png') no-repeat;
+    background: url('/images/pill-hovers/hover01.png') no-repeat;
     background-size: contain;
     position: absolute;
     height: 500px;
     width: 500px;
     left: 80px;
     top: 30px;
-    z-index: 999;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none; /* 이벤트 간섭 차단 */
 }
 #pill03-hover {
-  background: url('/images/hover02.png') no-repeat;
+  background: url('/images/pill-hovers/hover02.png') no-repeat;
   background-size: contain;
   position: absolute;
   height: 500px;
   width: 500px;
   left: 340px;
   top: 30px;
-  z-index: 999;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none; /* 이벤트 간섭 차단 */
 }
 #pill04-hover {
-  background: url('/images/hover03.png') no-repeat;
+  background: url('/images/pill-hovers/hover03.png') no-repeat;
   background-size: contain;
   position: absolute;
   height: 500px;
   width: 500px;
   left: 500px;
   top: 30px;
-  z-index: 999;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none; /* 이벤트 간섭 차단 */
 }
 #pill05-hover {
-  background: url('/images/hover04.png') no-repeat;
+  background: url('/images/pill-hovers/hover04.png') no-repeat;
   background-size: contain;
   position: absolute;
   height: 500px;
   width: 500px;
   left: 730px;
   top: 30px;
-  z-index: 999;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none; /* 이벤트 간섭 차단 */
 }
 #pill06-hover {
-  background: url('/images/hover05.png') no-repeat;
+  background: url('/images/pill-hovers/hover05.png') no-repeat;
   background-size: contain;
   position: absolute;
   height: 500px;
   width: 500px;
   left: 1000px;
   top: 30px;
-  z-index: 999;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none; /* 이벤트 간섭 차단 */
 }
 #pill07-hover {
-  background: url('/images/hover06.png') no-repeat;
+  background: url('/images/pill-hovers/hover06.png') no-repeat;
   background-size: contain;
   position: absolute;
   height: 500px;
   width: 500px;
   left: 1200px;
   top: 30px;
-  z-index: 999;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none; /* 이벤트 간섭 차단 */
-
 }
 .pill {
   transition: opacity 0.3s ease; 
 }
 .pill-hover {
-  transition: opacity 0.3s ease;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none; /* 이벤트 간섭 차단 */
 }
