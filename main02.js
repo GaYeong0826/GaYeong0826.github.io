@@ -117,33 +117,29 @@ $(function () {
     }
   });
 
-  $('#pill02, #pill03, #pill04, #pill05, #pill06, #pill07').on({
-    mouseenter: function () {
-      // 현재 pill의 -hover 요소만 보이게 설정
-      $(this).find('div').css('opacity', '1');
-    },
-    mouseleave: function () {
-      // 현재 pill의 -hover 요소 다시 숨김
-      $(this).find('div').css('opacity', '0');
-    },
-  });
   $(document).ready(function () {
     // 모든 .pill에 이벤트 리스너 추가
     $(".pill").on({
       mouseenter: function () {
         // 현재 마우스가 올라간 pill 제외한 다른 pill을 투명하게
         $(".pill").not(this).css("opacity", "0.3");
-        // 현재 pill의 hover 영역 활성화
-        $(this).find(".pill-hover").css("opacity", "1");
+  
+        // 현재 pill의 id에서 번호를 추출 (예: "pill02" -> "02")
+        const id = $(this).attr("id").replace("pill", "");
+  
+        // 대응되는 .pill-hover의 ID를 찾아 opacity 활성화
+        $(`#pill${id}-hover`).css("opacity", "1");
       },
       mouseleave: function () {
         // 모든 pill 투명도 복원
         $(".pill").css("opacity", "1");
-        // 현재 pill의 hover 영역 비활성화
-        $('#pills').find(".pill-hover").css("opacity", "0");
+  
+        // 모든 .pill-hover의 opacity를 0으로 복원
+        $(".pill-hover").css("opacity", "0");
       },
     });
   });
+  
   
 
     /*
