@@ -124,13 +124,6 @@ $(function() {
         $('#pill-text03').stop(true).animate({'opacity': 0}, 100);
       }
 
-      // pill03 클릭 창 이동동
-      if (yPos >= 1200) {
-        $('#pill03').off('click').on('click', function() {
-          window.location.href = '/main02.html';
-        });
-      }
-      
       if (yPos >=1200) {
         $('#click').stop(true).animate({'opacity': 1}, 300);
       } else {
@@ -139,5 +132,10 @@ $(function() {
   
     });
 
+    $('#pill03').off('click').on('click', function() {
+      $('body').fadeOut(500, function() {
+        window.location.href = '/main02.html';
+      });
+    });
 
 });
