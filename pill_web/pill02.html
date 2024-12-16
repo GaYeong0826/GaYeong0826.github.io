@@ -4,17 +4,26 @@
   <meta charset="utf-8">
   <title>만약</title>
   <style>
+
+    @font-face {
+      font-family: 'Pretendard';
+      src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+      font-style: normal;
+    }
     
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background-color: rgb(189, 255, 67);
     }
+    body {
+      background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(189, 255, 67, 1));
+      height: 100vh; /* 화면 전체 높이 적용 */
+    }
+
     #BG{
       position: absolute;
-      height: 100vh;
-      width: auto;
+
     }
     #info {
       position: absolute;
@@ -25,13 +34,57 @@
       z-index: 10;
       background: none;
     }
+    #pop-up {
+      position: absolute;
+      width: 700px;
+      height: 150px;
+      left: 140px;
+      top: 430px;
+      z-index: 11;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* X, Y, 블러, 투명도 */
+      opacity: 0;
+    }
+    #newsinfo {
+      font-family: 'Pretendard';
+      position: absolute;
+      width: 700px;
+      height: 150px;
+      padding: 30px;
+      left: 140px;
+      top: 430px;
+      z-index: 12;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+      opacity: 0;
+
+    }
+    #newsinfo p:nth-child(2) {
+      font-weight: bold;
+      font-size: 15px;
+      text-align: right;
+      margin-top: 20px;
+      margin-right: 20px;
+      color: gray;
+    }
 
   </style>
 </head>
 
 <body>
 
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="/info.js"></script> 
+
 <img id="BG" src="/images/pill_info/pill02-info.png">
 <img id="info" src="/images/news_icon.png">
+<div id="pop-up"></div>
+<div id="newsinfo">
+  <p>생존 확률 1%라던 특전사 대원, 7개월 만에 기적적으로 회복</p>
+  <p>기사 보러 가기 > </p>
+</div>
 
 </body>
