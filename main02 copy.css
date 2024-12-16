@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(243, 239, 235);
+}
+
+video {
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  margin-left: -50%;
+  width: 100%;
+  z-index: 0; 
+}
+
+
+#circle1 {
+  position: absolute;
+  top: 1000px;
+  left: 10%;
+  background-image: url('/images/01.png'); 
+  background-size: cover;
+  z-index: 10; 
+}
+
+#circle2 {
+  position: absolute;
+  top: 1000px;
+  left: 30%;
+  background-image: url('/images/02.png');
+  background-size: cover;
+  z-index: 10;
+}
+
+#circle3 {
+  position: absolute;
+  top: 1000px;
+  left: 50%;
+  background-image: url('/images/03.png');
+  background-size: cover;
+  z-index: 10;
+}
+
+#circle4 {
+  position: absolute;
+  top: 1000px;
+  left: 70%;
+  background-image: url('/images/01.png');
+  background-size: cover;
+  z-index: 10;
+}
+
+#circle5 {
+  position: absolute;
+  top: 1100px;
+  left: 10%;
+  background-image: url('/images/circle5.png'); 
+  background-size: cover;
+  z-index: 10;
+}
+
+#circle6 {
+  position: absolute;
+  top: 1100px;
+  left: 30%;
+  background-image: url('/images/02.png');
+  background-size: cover;
+  z-index: 10;
+}
+
+#circle7 {
+  position: absolute;
+  top: 1100px;
+  left: 50%;
+  background-image: url('/images/03.png');
+  background-size: cover;
+  z-index: 10;
+}
+
+#circle8 {
+  position: absolute;
+  top: 1100px;
+  left: 70%;
+  background-image: url('/images/circle8.png');
+  background-size: cover;
+  z-index: 10;
+}
+
+#circle9 {
+  position: absolute;
+  top: 1200px;
+  left: 10%;
+  background-image: url('/images/02.png'); 
+  background-size: cover;
+  z-index: 10;
+}
+#checkcontainer {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  left: 50%;
+  top: 1700px;
+  position: absolute; 
+  height: 1500px; 
+  margin-top: 100px; 
+  z-index: 10;
+}
+
+#circle10 {
+  width: 1500px;
+  height: 1500px;
+  background-image: url('/images/01.png'); 
+  background-size: cover;
+}
+
+#checklist {
+  width: 700px;
+  height: 700px;
+}
+#checklist p {
+ font-weight: bold;
+ font-size: 60px;
+ margin-bottom: 50px;
+}
+#checklist ul {
+  font-weight: bold;
+  font-size: 25px;
+ }
+ #checklist li {
+  list-style: none;
+  margin-bottom: 15px;
+ }
+ /* 화면 어두워지는 효과 */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 11;
+  display: none;
+}

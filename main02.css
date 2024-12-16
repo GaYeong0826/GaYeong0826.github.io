@@ -1,0 +1,339 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(243, 239, 235);
+}
+#wide-message {
+  display: none; 
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  background-color: rgba(0, 0, 0, 0.8); 
+  color: white; 
+  font-size: 24px; 
+  padding: 20px; 
+  border-radius: 10px; 
+  z-index: 9999;
+  text-align: center; 
+}
+#narrow-message {
+  display: none; 
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  background-color: rgba(0, 0, 0, 0.8); 
+  color: white; 
+  font-size: 24px; 
+  padding: 20px; 
+  border-radius: 10px; 
+  z-index: 9999;
+  text-align: center; 
+}
+body{
+  width: 1920px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-style: normal;
+}
+#box1 {
+  position: fixed;
+  background-color: rgb(209, 159, 255);
+  top: 10px;
+  right: 10px;
+  width: 80px;
+  height: 50px;
+  z-index: 999;
+  opacity: 1;
+}
+
+video {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  margin-left: -50%;
+  width: 100%;
+  z-index: 0; 
+  border: none;
+}
+#circle-container{
+  width: 1920px;
+  height: 5000px;
+}
+.circle {
+  background: none;
+  background-size: cover;
+  z-index: 10; 
+}
+#circle1 {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  left: 35%;
+  top: 1100px;
+  background-image: url('/images/01.png');
+
+}
+
+#circle2 {
+  position: absolute;
+  width: 196px;
+  height: 196px;
+  left: 25%;
+  top: 1321px;
+  background-image: url('/images/04.png');
+}
+
+#circle3 {
+  position: absolute;
+  width: 836px;
+  height: 836px;
+  left: -22%;
+  top: 1551px;
+  background-image: url('/images/03.png');
+
+}
+
+#circle4 {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  left: 17%;
+  top: 1880px;
+  background-image: url('/images/02.png');
+
+}
+
+#circle5 {
+  position: absolute;
+  width: 172px;
+  height: 172px;
+  left: 40%;
+  top: 1620px;
+  background-image: url('/images/03.png'); 
+
+}
+
+#circle6 {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  left: 70%;
+  top: 1368px;
+  background-image: url('/images/04.png');
+
+}
+
+#circle7 {
+  position: absolute;
+  width: 282px;
+  height: 282px;
+  left: 35%;
+  top: 2142px;
+  background-image: url('/images/01.png');
+
+}
+
+#circle8 {
+  position: absolute;
+  width: 582px;
+  height: 582px;
+  left: 70%;
+  top: 1997px;
+  background-image: url('/images/03-1.png');
+
+}
+
+#circle9 {
+  position: absolute;
+  width: 868px;
+  height: 868px;
+  left: 60%;
+  top: 2220px;
+  background-image: url('/images/04.png'); 
+
+}
+
+#circle10 {
+  position: absolute;
+  width: 1734px;
+  height: 1734px;
+  left: -40%;
+  top: 2640px;
+  background-image: url('/images/02.png'); 
+  transition: left 1s ease-in-out; 
+  z-index: 12;
+}
+#text01 {
+  position: absolute;
+  left: 50%;
+  top: 1880px;
+  width: 500px;
+  margin-left: -250px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Pretendard';
+  opacity: 0;
+}
+#checklist {
+  width: 900px;
+  height: 400px;
+  position: absolute;
+  top: 3310px;
+  left: 50%;
+  z-index: 11;
+  background: none;
+  font-family: 'Pretendard';
+
+}
+#checklist p:nth-child(2) {
+ font-weight: bold;
+ font-size: 60px;
+ margin-left: 50px;
+ margin-bottom: 50px;
+ background: none;
+}
+#checklist p:nth-child(1) {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  background: none;
+  color: rgb(141, 134, 127);
+}
+#checklist ul {
+  font-weight: bold;
+  font-size: 25px;
+  background: none;
+
+ }
+ #checklist li {
+  list-style: none;
+  margin-bottom: 15px;
+  background: none;
+
+ }
+ .check-item {
+  margin: 15px;
+ }
+ 
+ /* 화면 어두워지는 효과 */
+ .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0; 
+  visibility: hidden; 
+  z-index: 11;
+  transition: opacity 0.5s ease; 
+}
+
+#result {
+  position: absolute;
+  width: 1000px;
+  height: 300px;
+  margin-left: -500px;
+  top: 3500px;
+  left: 40%;
+  z-index: 11;
+  background: none;
+  visibility: hidden;
+  opacity: 0;
+}
+#result p {
+  background: none;
+  font-family: 'Pretendard';
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  padding: 10px;
+}
+#result p:nth-child(2) {
+  background: none;
+  font-family: 'Pretendard';
+  font-weight: bold;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  padding: 10px;
+}
+#last-text01 {
+  position: absolute;
+  font-family: 'Pretendard';
+  width: 1000px;
+  height: 200px;
+  margin-left: -500px;
+  top: 4500px;
+  left: 50%;
+  z-index: 11;
+  color: rgb(0, 0, 0); 
+  background: none;
+}
+#last-text01 p {
+  font-size: 40px;
+  background: none;
+  text-align: center;
+  font-weight: bold;
+}
+#last-text02 {
+  position: absolute;
+  font-family: 'Pretendard';
+  width: 1000px;
+  height: 200px;
+  margin-left: -500px;
+  top: 5500px;
+  left: 50%;
+  z-index: 11;
+  color: rgb(0, 0, 0);
+  background: none;
+}
+#last-text02 p {
+  font-size: 30px;
+  background: none;
+  text-align: center;
+}
+#last-text02 p:nth-child(2) {
+  font-size: 70px;
+  font-weight: bold;
+  margin: 20px;
+  background: none;
+  text-align: center;
+}
+#last-text03 {
+  position: absolute;
+  font-family: 'Pretendard';
+  width: 1000px;
+  height: 500px;
+  margin-left: -500px;
+  top: 6500px;
+  left: 50%;
+  z-index: 11;
+  color: rgb(0, 0, 0);
+  background: none; 
+}
+#last-text03 p {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 30px;
+  background: none;
+  text-align: center;
+}
+#last-pill {
+  background: url('/images/pill01.png');
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  top: 6000px;
+  left: 50%;
+  z-index: 999;
+}
