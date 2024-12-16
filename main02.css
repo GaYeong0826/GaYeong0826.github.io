@@ -364,18 +364,25 @@ video {
   top: 7000px;
   left: 0px;
 }
-
+#pills {
+  position: absolute;
+  width: 1800px;
+  height: 1000px;
+  margin-left: -900px;
+  left: 50%;
+  top: 6400px;
+}
 #pills-container {
   display: flex;
   align-items: flex-end;
+  align-content: flex-end;
   justify-content: center;
   flex-wrap: wrap;
   position: absolute;
   width: 1800px;
-  height: 500px;
+  height: 700px;
   margin-left: -900px;
   left: 50%;
-  top: 6400px;
   z-index: 999;
   background: none;
   gap: 20px;
@@ -461,58 +468,52 @@ video {
   background-size: contain;
 }
 #pill02-hover {
-    background: url('/images/pill-hovers/hover01.png') no-repeat;
+    background: url('/images/pill-hovers/hover02.png') no-repeat;
     background-size: contain;
     position: absolute;
     height: 500px;
     width: 500px;
     left: 80px;
-    top: 30px;
 }
 #pill03-hover {
-  background: url('/images/pill-hovers/hover02.png') no-repeat;
-  background-size: contain;
-  position: absolute;
-  height: 500px;
-  width: 500px;
-  left: 340px;
-  top: 30px;
-}
-#pill04-hover {
   background: url('/images/pill-hovers/hover03.png') no-repeat;
   background-size: contain;
   position: absolute;
   height: 500px;
   width: 500px;
-  left: 500px;
-  top: 30px;
+  left: 340px;
 }
-#pill05-hover {
+#pill04-hover {
   background: url('/images/pill-hovers/hover04.png') no-repeat;
   background-size: contain;
   position: absolute;
   height: 500px;
   width: 500px;
-  left: 730px;
-  top: 30px;
+  left: 500px;
 }
-#pill06-hover {
+#pill05-hover {
   background: url('/images/pill-hovers/hover05.png') no-repeat;
   background-size: contain;
   position: absolute;
   height: 500px;
   width: 500px;
-  left: 1000px;
-  top: 30px;
+  left: 730px;
 }
-#pill07-hover {
+#pill06-hover {
   background: url('/images/pill-hovers/hover06.png') no-repeat;
   background-size: contain;
   position: absolute;
   height: 500px;
   width: 500px;
+  left: 1000px;
+}
+#pill07-hover {
+  background: url('/images/pill-hovers/hover07.png') no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 500px;
+  width: 500px;
   left: 1200px;
-  top: 30px;
 }
 .pill {
   transition: opacity 0.3s ease; 
