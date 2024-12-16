@@ -330,10 +330,23 @@ video {
 }
 #last-pill {
   background: url('/images/pill01.png');
+  background-size: cover;
   position: absolute;
-  height: 500px;
-  width: 500px;
-  top: 6000px;
+  height: 300px;
+  width: 300px;
+  margin-left: -150px;
+  top: 6200px;
+  left: 50%;
+  z-index: 999;
+}
+#BG1 {
+  background: url('/images/BG1.png');
+  background-size: cover;
+  position: absolute;
+  height: 3000px;
+  width: 1920px;
+  margin-left: -150px;
+  top: 6200px;
   left: 50%;
   z-index: 999;
 }

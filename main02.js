@@ -59,8 +59,10 @@ $(function () {
 
     if (yPos >= 5700) {
       $('#last-text03').stop().animate({ 'opacity': 1 }, 300);
+      $('#last-pill').stop().animate({ 'opacity': 1 }, 300);
     } else {
       $('#last-text03').stop().animate({ 'opacity': 0 }, 300);
+      $('#last-pill').stop().animate({ 'opacity': 0 }, 300);
     }
 
     if (yPos <= 2300) {
@@ -112,11 +114,11 @@ $(function () {
       $('#last-text01, #last-text02, #last-text03').css('color', 'black');
     }
   });
-  
+  /*
   $('#pill03').off('click').on('click', function() {
     window.location.href = 'https://www.example.com';  // 외부 사이트로 이동
   });
-  
+  */
 
 
   
